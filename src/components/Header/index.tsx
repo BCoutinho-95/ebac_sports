@@ -1,13 +1,13 @@
 import * as S from './styles'
 
-import { Produto } from '../../App'
+import { Produto } from '../Produto/styles'
 
 import cesta from '../../assets/cesta.png'
 import { paraReal } from '../Produto'
 
 type Props = {
-  itensNoCarrinho: Produto[]
-  favoritos: Produto[]
+  itensNoCarrinho: (typeof Produto)[]
+  favoritos: (typeof Produto)[]
 }
 
 const Header = ({ itensNoCarrinho, favoritos }: Props) => {
